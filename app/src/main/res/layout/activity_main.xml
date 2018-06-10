@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/udacitylogo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="true"
+        android:maxWidth="500dp"
+        android:maxHeight="42dp"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="5dp"
+        />
+
+    <ImageView
+        android:id="@+id/banner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/banner"
+        android:adjustViewBounds="true"
+        android:maxWidth="1080dp"
+        android:maxHeight="565dp"
+        android:scaleType="fitCenter"
+        android:layout_below="@id/logo"
+        android:layout_marginTop="5dp"
+        />
+    <ImageView
+        android:id="@+id/logoicon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/udacitylogo"
+        android:adjustViewBounds="true"
+        android:maxWidth="400dp"
+        android:maxHeight="30dp"
+        android:scaleType="fitCenter"
+        android:layout_below="@id/banner"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="30dp"
+        />
+
+    <ImageView
+        android:id="@+id/mapicon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/map"
+        android:adjustViewBounds="true"
+        android:maxWidth="40dp"
+        android:maxHeight="25dp"
+        android:scaleType="fitCenter"
+        android:layout_below="@id/logoicon"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="40dp"/>
+
+    <TextView
+        android:id="@+id/addline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logoicon"
+        android:layout_toRightOf="@id/mapicon"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="15dp"
+        android:text="@string/addline"
+        android:autoLink="map"
+        android:textColorLink="@android:color/white"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@android:color/white"/>
+
+
+    <ImageView
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/phone"
+        android:adjustViewBounds="true"
+        android:maxWidth="40dp"
+        android:maxHeight="25dp"
+        android:scaleType="fitCenter"
+        android:layout_below="@id/addline"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="40dp"/>
+
+    <TextView
+        android:id="@+id/phoneno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addline"
+        android:layout_toRightOf="@id/phone"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="15dp"
+        android:text="@string/phone"
+        android:autoLink="phone"
+        android:textColorLink="@android:color/white"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@android:color/white"/>
+
+    <ImageView
+        android:id="@+id/webicon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/webicon"
+        android:adjustViewBounds="true"
+        android:maxWidth="40dp"
+        android:maxHeight="25dp"
+        android:scaleType="fitCenter"
+        android:layout_below="@id/phoneno"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="40dp"/>
+
+    <TextView
+        android:id="@+id/web"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phoneno"
+        android:layout_toRightOf="@id/webicon"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="15dp"
+        android:text="@string/web"
+        android:autoLink="web"
+        android:textColorLink="@android:color/white"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@android:color/white"/>
+
+
+    <LinearLayout
+        android:background="@android:color/black"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <TextView
+            android:id="@+id/ucotg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="UDACITY ON THE GO"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:id="@+id/play"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.4"
+            android:gravity="center"
+            android:padding="0dp"
+            android:onClick="openApp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/playstore3"/>
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
